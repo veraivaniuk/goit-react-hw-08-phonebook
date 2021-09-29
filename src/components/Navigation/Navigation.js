@@ -26,7 +26,7 @@ export default function  Navigation () {
 
     {isAuthenticated && (
       <NavLink
-        to="/contasts"
+        to="/contacts"
         exact
         style={styles.link}
         activeStyle={styles.activeLink}

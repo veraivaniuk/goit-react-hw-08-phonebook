@@ -41,13 +41,13 @@ export default function RegisterView() {
         <Form onSubmit={handleSubmit}>
             <Form.Floating className="mb-3">
                 <Form.Control
-                id="floatingInputCustom"
+                id="floatingTextarea"
                 type="text"
                 placeholder="name"
                 value={name}
                 onChange={handleChangeName}
                 />
-                <label htmlFor="floatingInputCustom">Name</label>
+                <label htmlFor="floatingTextarea">Name</label>
             </Form.Floating>
             <Form.Floating className="mb-3">
                 <Form.Control

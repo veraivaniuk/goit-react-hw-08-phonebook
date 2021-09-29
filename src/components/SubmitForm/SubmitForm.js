@@ -4,7 +4,8 @@ import Button from "../Button/Button";
 import s from "./SubmitForm.module.css";
 import { useState } from "react";
 import { getItems } from "../../redux/contacts/selectors";
-import {addContact} from "../../redux/contacts/operation";
+import { addContact } from "../../redux/contacts/operation";
+import { v4 as uuidv4 } from 'uuid';
 
 export default function SubmitForm() {
   const contacts = useSelector(getItems);
@@ -35,6 +36,7 @@ export default function SubmitForm() {
       <label className={s.label}>
         Name
         <input
+         
           type="text"
           name={name}
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -48,6 +50,7 @@ export default function SubmitForm() {
       <label className={s.label}>
         Number
         <input
+          
           type="tel"
           name={number}
           pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"

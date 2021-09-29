@@ -1,7 +1,7 @@
 import axios from 'axios';
 import authActions from './actions';
 
-axios.defaults.baseURL = 'https://lpj-tasker.herokuapp.com';
+axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 
 const token = {
   set(token) {
